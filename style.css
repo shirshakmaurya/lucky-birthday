@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  h1{
+    text-align: center;
+  }
+  .container{
+    width:50%;
+    margin:auto;
+  }
+  
+  input,label{
+    display:"block";
+  }
+  
+  input{
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  
+  #check-number{
+    display: block;
+    margin-top: 1rem;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+  
