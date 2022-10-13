@@ -4,12 +4,17 @@ html, body {
   }
   h1{
     text-align: center;
+    color: #6e85b7;
   }
   .container{
     width:50%;
     margin:auto;
   }
   
+  button{
+    border-color: #6e85b7;
+  }
+
   input,label{
     display:"block";
   }

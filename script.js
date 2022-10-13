@@ -5,17 +5,21 @@ const outputBox = document.querySelector("#output-box")
 
 function compareValues(sum, luckyNumber) {
   if (sum % luckyNumber == 0) {
-    outputBox.innerText = "Your birthday is lucky"
+    outputBox.innerText = "Your birthday is lucky 😊"
   }
   else {
-    outputBox.innerText = "Your birthday is not lucky"
+    outputBox.innerText = "Your birthday is not lucky 🥺"
   }
 }
 
 function checkBirthdayDateIsLucky() {
   const birthDate = dateOfBirth.value;
   const sum = calculateSume(birthDate);
-  if(sum && birthDate)
+  if(sum && luckyNumber.value<0){
+    outputBox.innerText("Enter valid Number")
+  }
+  else if(!sum || luckyNumber.value===""){outputBox.innerText="Enter Both details correctly"}
+  else if(sum && birthDate)
     compareValues(sum, luckyNumber.value);
   else  
     outputBox.innerText("Please enter both details.")
